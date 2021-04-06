@@ -1,11 +1,12 @@
-Custom Drupal module for rusa.org
+# Custom Drupal module for rusa.org
 Author: Paul Lieberman
 
 This module includes classes and methods used by all of the other rusa/ modules, mainly for database interaction. The Client classes currently use the GDBM2JSON gateway to get data from the GDBM files. In theory these could just be swapped for classes that use the entity API once the data is in Drupal, and none of the others would have to change.
 
-Classes
+## Classes
 --------------------
 
+```
 RusaApiForm     - Early development work, can be deleted
 RusaClubs       - Methods to get club data 
 RusaCountries   - Methods to get country data
@@ -27,6 +28,5 @@ Form/RusaClubsForm   - Query form. Not really part of the API and not being used
 Form/RusaMembersForm - Query form. Not really part of the API and not being used.
 Form/RusaRegionsForm - Query form. Not really part of the API and not being used.
 
-
 Plugin/rest/resource/RusaApiResource - Early attempt at defining a REST resource. Not yet ready for prime time.
-
+```
